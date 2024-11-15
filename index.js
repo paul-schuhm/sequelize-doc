@@ -20,21 +20,18 @@ async function main() {
     console.log("Modèles synchronisés.\n\n\n");
 
     // Ajouter des utilisateurs
-    const user1 = await User.create({
-      name: "Alice",
-      email: "alice@example.com",
-    });
+    const user1 = await User.create({ name: "Alice", email: "alice@example.com" });
     const user2 = await User.create({ name: "Bob", email: "bob@example.com" });
     console.log("Ajouts des utilisateurs...\n");
-    console.log("Utilisateurs ajoutés :", [user1.name, user2.name],"\n\n");
+    console.log("Utilisateurs ajoutés :", [user1.name, user2.name], "\n\n");
 
     //Récupérer un utilisateur avec Primary Key
     const usersOnePK = await User.findByPk(1);
     if (usersOnePK === null) {
       console.log("L'utilisateur n'est pas trouvé !\n");
     } else {
-      console.log("Utilisateur trouvé via PK :",usersOnePK instanceof User); // true
-      console.log("Nom :",usersOnePK.name,"\n\n"); // Renvoie Bob
+      console.log("Utilisateur trouvé via PK :", usersOnePK instanceof User); // true
+      console.log("Nom :", usersOnePK.name, "\n\n"); // Renvoie Bob
     }
 
     //Récupérer un utilisateur qui s'appelle Bob
@@ -42,8 +39,29 @@ async function main() {
     if (userOne === null) {
       console.log("L'utilisateur n'est pas trouvé !\n\n");
     } else {
-      console.log("Utilisateur trouvé via son Nom :",userOne instanceof User); // true
-      console.log("Nom :",userOne.name,"\n\n"); // Renvoie Bob
+      console.log("Utilisateur trouvé via son Nom :", userOne instanceof User); // true
+      console.log("Nom :", userOne.name, "\n\n"); // Renvoie Bob
+    }
+
+    //Récuperer ou créer un utilisateur
+    const [user3, created] = await User.findOrCreate({
+      where: { name: "Alice" },
+      defaults: { email: "Alice@alice.fr" },
+    });
+    if (created) {
+      console.log("\n\n Alice n'existait pas, elle a été créée ! \n\n");
+    } else {
+      console.log("\n\n Alice existait déjà et n'a donc pas été recréée. \n\n");
+    }
+
+    const [user4, created2] = await User.findOrCreate({
+      where: { name: "Charlie" },
+      defaults: { email: "Charlie@charlie.fr" },
+    });
+    if (created2) {
+      console.log("\n\n Charlie n'existait pas, il a été créé ! : ", user4.name + "\n\n");
+    } else {
+      console.log(" \n\n Charlie existait déjà et n'a donc pas été recréé. \n\n");
     }
 
     // Récupérer et afficher tous les utilisateurs
@@ -53,13 +71,15 @@ async function main() {
       console.log(`- ${user.name} (${user.email})`)
     );
     console.log("\n\n FINI");
-    
+
   } catch (error) {
     console.error("Erreur lors de l'exécution :", error);
   } finally {
     // Fermer la connexion
     await sequelize.close();
   }
+
+
 }
 
 
