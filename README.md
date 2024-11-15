@@ -1,15 +1,10 @@
-# Documentation Sequelize
+# Exemple d'utilisation de Sequelize
 
-Une documentation collaborative des fonctionnalités principales de l'ORM Sequelize.
+Ce projet est une démonstration des fonctionnalités principales de l'ORM Sequelize. Il inclut des exemples pour :
 
-## Références utiles
-
-- [Sequelize](https://sequelize.org/), le site officiel de l'ORM ;
-
-## Sources
-
-- Getting started de sequelize : https://sequelize.org/docs/v6/getting-started/
-- La documentation de find pour sequelize : https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findall
+- Gérer des modèles ;
+- Effectuer des requêtes simples (find, findOne, findByPk, etc.) ;
+- Interagir avec une base de données MySQL.
 
 ## Démarche pour démarrer le projet
 
@@ -29,3 +24,9 @@ Une documentation collaborative des fonctionnalités principales de l'ORM Sequel
 ## Vérification des logs
 
 Regardez les logs pour voir les différentes requêtes effectuées par Sequelize.
+
+
+## Sources
+
+- Démarrer avec Sequelize : https://sequelize.org/docs/v6/getting-started/
+- La documentation de Find pour sequelize : https://sequelize.org/docs/v6/core-concepts/model-querying-finders
