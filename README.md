@@ -4,6 +4,7 @@ Une documentation collaborative des fonctionnalités principales de l'ORM Sequel
 
 ## Démos
 
+- [Se connecter a une base de donnée](./connect-database/)
 - [Créer des entités](./creer-une-entite/)
 - [Mettre à jour les données](./mise-a-jour-donnees/)
 - [Utiliser les transactions](./transactions/)
