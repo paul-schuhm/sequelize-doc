@@ -1,4 +1,4 @@
-# Exemple d'utilisation de Sequelize
+# Exemple pour Find avec Sequelize
 
 Ce projet est une démonstration des fonctionnalités principales de l'ORM Sequelize. Il inclut des exemples pour :
 
