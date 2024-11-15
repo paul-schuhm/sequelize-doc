@@ -1,0 +1,14 @@
+{
+    "name": "sequelize-docker-example",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "docker run --name some-mysql -p 5010:3306 -e MYSQL_DATABASE=demo -e MYSQL_ROOT_PASSWORD=password -d mysql:9 & node index.js",
+      "docker:stop": "docker stop some-mysql && docker rm some-mysql"
+    },
+    "dependencies": {
+      "sequelize": "^6.31.0",
+      "mysql2": "^3.6.0"
+    }
+  }
+  
