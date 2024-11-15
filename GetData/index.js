@@ -17,7 +17,7 @@ async function main() {
 
     // Synchroniser les modèles avec BDD
     await sequelize.sync({ force: true }); //On force la synchronisation pour réinitialiser la BDD
-    console.log("Modèles synchronisés.\n\n\n");
+    console.log("Modèles synchronisés.\n\n");
 
     // Ajouter des utilisateurs
     const user1 = await User.create({ name: "Alice", email: "alice@example.com" });
