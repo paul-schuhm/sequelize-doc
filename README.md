@@ -4,7 +4,8 @@ Une documentation collaborative des fonctionnalités principales de l'ORM Sequel
 
 ## Démos
 
-- [Transactions](./transactions/)
+- [Utiliser les transactions](./transactions/)
+- [Mettre à jour les données](./mise-a-jour-donnees/)
 
 ## Références utiles
 
