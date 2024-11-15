@@ -8,6 +8,7 @@ Une documentation collaborative des fonctionnalités principales de l'ORM Sequel
 - [Mettre à jour les données](./mise-a-jour-donnees/)
 - [Utiliser les transactions](./transactions/)
 - [Créer des associations entre entités](./associations)
+- [Écrire des requêtes SQL customs](./custom-sql)
 
 ## Références utiles
 
