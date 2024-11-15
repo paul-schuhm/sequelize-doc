@@ -11,6 +11,8 @@ Une documentation collaborative des fonctionnalités principales de l'ORM Sequel
 - [Créer des associations entre entités](./associations)
 - [Écrire des requêtes SQL customs](./custom-sql)
 - [Écrire des requêtes préparées](./prepared-statement)
+- [Récupérer des données (find)](./recup-donnees)
+
 
 ## Références utiles
 
