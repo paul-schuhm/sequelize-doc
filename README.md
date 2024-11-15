@@ -7,6 +7,7 @@ Une documentation collaborative des fonctionnalités principales de l'ORM Sequel
 - [Créer des entités](./creer-une-entite/)
 - [Mettre à jour les données](./mise-a-jour-donnees/)
 - [Utiliser les transactions](./transactions/)
+- [Créer des associations entre entités](./associations)
 
 ## Références utiles
 

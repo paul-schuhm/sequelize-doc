@@ -1,6 +1,6 @@
 # Démo - Associations avec Sequelize
 
-Cette démo illustre l'implémentation des associations entre entités avec Sequelize.
+Cette démo illustre l'implémentation des associations entre entités avec Sequelize, et la différence entre le *lazy* et le *eager* loading.
 
 ## Lancer la démo
 
