@@ -1,4 +1,5 @@
-const { Sequelize, DataTypes } = require('sequelize');
+const { Sequelize } = require('sequelize');
+const User = require('../models/Book');
 
 // Configuration Sequelize
 const sequelize = new Sequelize('testdb', 'user', 'password', {
@@ -6,17 +7,7 @@ const sequelize = new Sequelize('testdb', 'user', 'password', {
   dialect: 'mysql',
 });
 
-// Modèle d'exemple
-const User = sequelize.define('User', {
-  name: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  email: {
-    type: DataTypes.STRING,
-    unique: true,
-  },
-});
+
 
 // Tester la connexion
 (async () => {
