@@ -12,6 +12,15 @@ commande pour migrer : npx sequelize-cli db:migrate
 commande pour annuler la migrations : npx sequelize-cli db:migrate:undo:all
 
 
-## Références utiles
+## Démos
 
-- [Sequelize - Migration](https://sequelize.org/docs/v6/other-topics/migrations/), la page expliquant le focntionnement des migrations ;
+- [Se connecter a une base de donnée](./connect-database/)
+- [Créer des entités](./creer-une-entite/)
+- [Mettre à jour les données](./mise-a-jour-donnees/)
+- [Utiliser les transactions](./transactions/)
+- [Créer des associations entre entités](./associations)
+- [Écrire des requêtes SQL customs](./custom-sql)
+- [Écrire des requêtes préparées](./prepared-statement)
+- [Récupérer des données (find)](./recup-donnees)
+
+

@@ -1,0 +1,17 @@
+{
+  "name": "transactions",
+  "version": "1.0.0",
+  "description": "Cette démo illustre l'utilisation des transactions avec Sequelize.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.11.4",
+    "sequelize": "^6.37.5"
+  }
+}
