@@ -1,6 +1,16 @@
-# Documentation Sequelize
+# Exemples de migrations du schéma
 
-Une documentation collaborative des fonctionnalités principales de l'ORM Sequelize.
+Le but de cette démo est de pouvoir effectuer des migrations vers la base de données pour pouvoir mettre à jour les données.. 
+
+# Lancer la démo
+
+Après avoir créer et relié une base de donnée au projet puis créer des fichiers de migrations
+
+Migrer la base de donnée
+commande pour migrer : npx sequelize-cli db:migrate
+
+commande pour annuler la migrations : npx sequelize-cli db:migrate:undo:all
+
 
 ## Démos
 
@@ -14,6 +24,3 @@ Une documentation collaborative des fonctionnalités principales de l'ORM Sequel
 - [Récupérer des données (find)](./recup-donnees)
 
 
-## Références utiles
-
-- [Sequelize](https://sequelize.org/), le site officiel de l'ORM ;
